@@ -19,9 +19,9 @@ def fibs_rec(num)
 end
 
 # calls fibs_rec to return fibonacci sequence elements up to num
-def fibs_rec_list(result, num)
+def fibs_rec_list(result = [], num)
   0.upto(num) { |elem| result << fibs_rec(elem) }
   result
 end
 
-p fibs_rec_list([], 8)
+p fibs_rec_list(8)
